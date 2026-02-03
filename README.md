@@ -1,18 +1,15 @@
-# @freelensapp/example-extension
+# freelens-sre-stats-extension
 
 <!-- markdownlint-disable MD013 -->
 
 [![Home](https://img.shields.io/badge/%F0%9F%8F%A0-freelens.app-02a7a0)](https://freelens.app)
 [![GitHub](https://img.shields.io/github/stars/freelensapp/freelens?style=flat&label=GitHub%20%E2%AD%90)](https://github.com/freelensapp/freelens)
-[![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/freelensapp/freelens-example-extension)
-[![Release](https://img.shields.io/github/v/release/freelensapp/freelens-example-extension?display_name=tag&sort=semver)](https://github.com/freelensapp/freelens-example-extension)
-[![Integration tests](https://github.com/freelensapp/freelens-example-extension/actions/workflows/integration-tests.yaml/badge.svg?branch=main)](https://github.com/freelensapp/freelens-example-extension/actions/workflows/integration-tests.yaml)
-[![npm](https://img.shields.io/npm/v/@freelensapp/example-extension.svg)](https://www.npmjs.com/package/@freelensapp/example-extension)
+[![Release](https://img.shields.io/github/v/release/YoranSys/freelens-sre-stats-extension?display_name=tag&sort=semver)](https://github.com/YoranSys/freelens-sre-stats-extension)
+[![Integration tests](https://github.com/YoranSys/freelens-sre-stats-extension/actions/workflows/integration-tests.yaml/badge.svg?branch=main)](https://github.com/YoranSys/freelens-sre-stats-extension/actions/workflows/integration-tests.yaml)
 
 <!-- markdownlint-enable MD013 -->
 
-This repository serves as an example how to build and publish extensions for
-Freelens application.
+This extension provides SRE investigation stats for Freelens clusters.
 
 Visit wiki page about [creating
 extensions](https://github.com/freelensapp/freelens/wiki/Creating-extensions)
@@ -23,32 +20,16 @@ for more informations.
 - Kubernetes >= 1.24
 - Freelens >= 1.6.0
 
-## API supported
-
-- example.freelens.app/v1alpha1
-
-To install Custom Resource Definition for this example run:
-
-```sh
-kubectl apply -f examples/crds/customresourcedefinition.yaml
-```
-
-Examples provide a resource for test:
-
-```sh
-kubectl apply -f examples/test/example.yaml
-```
-
 ## Install
 
 To install open Freelens and go to Extensions (`ctrl`+`shift`+`E` or
-`cmd`+`shift`+`E`), and install `@freelensapp/example-extension`.
+`cmd`+`shift`+`E`), and install `freelens-sre-stats-extension`.
 
 or:
 
 Use a following URL in the browser:
-[freelens://app/extensions/install/%40freelensapp%2Fexample-extension]
-(freelens://app/extensions/install/%40freelensapp%2Fexample-extension)
+[freelens://app/extensions/install/freelens-sre-stats-extension]
+(freelens://app/extensions/install/freelens-sre-stats-extension)
 
 ## Build from the source
 
@@ -150,6 +131,6 @@ pnpm build
 
 ## License
 
-Copyright (c) 2025 Freelens Authors.
+Copyright (c) 2026 Yoransys.
 
 [MIT License](https://opensource.org/licenses/MIT)
