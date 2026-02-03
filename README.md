@@ -47,7 +47,8 @@ To install open Freelens and go to Extensions (`ctrl`+`shift`+`E` or
 or:
 
 Use a following URL in the browser:
-[freelens://app/extensions/install/%40freelensapp%2Fexample-extension](freelens://app/extensions/install/%40freelensapp%2Fexample-extension)
+[freelens://app/extensions/install/%40freelensapp%2Fexample-extension]
+(freelens://app/extensions/install/%40freelensapp%2Fexample-extension)
 
 ## Build from the source
 
