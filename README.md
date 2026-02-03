@@ -1,11 +1,11 @@
-# freelens-sre-stats-extension
+# freelens-stats-extension
 
 <!-- markdownlint-disable MD013 -->
 
 [![Home](https://img.shields.io/badge/%F0%9F%8F%A0-freelens.app-02a7a0)](https://freelens.app)
 [![GitHub](https://img.shields.io/github/stars/freelensapp/freelens?style=flat&label=GitHub%20%E2%AD%90)](https://github.com/freelensapp/freelens)
-[![Release](https://img.shields.io/github/v/release/YoranSys/freelens-sre-stats-extension?display_name=tag&sort=semver)](https://github.com/YoranSys/freelens-sre-stats-extension)
-[![Integration tests](https://github.com/YoranSys/freelens-sre-stats-extension/actions/workflows/integration-tests.yaml/badge.svg?branch=main)](https://github.com/YoranSys/freelens-sre-stats-extension/actions/workflows/integration-tests.yaml)
+[![Release](https://img.shields.io/github/v/release/YoranSys/freelens-stats-extension?display_name=tag&sort=semver)](https://github.com/YoranSys/freelens-stats-extension)
+[![Integration tests](https://github.com/YoranSys/freelens-stats-extension/actions/workflows/integration-tests.yaml/badge.svg?branch=main)](https://github.com/YoranSys/freelens-stats-extension/actions/workflows/integration-tests.yaml)
 
 <!-- markdownlint-enable MD013 -->
 

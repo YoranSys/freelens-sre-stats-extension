@@ -1,10 +1,10 @@
 {
-  "name": "freelens-sre-stats-extension",
+  "name": "freelens-stats-extension",
   "version": "0.1.0",
   "description": "SRE investigation stats for Freelens clusters",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yoransys/freelens-sre-stats-extension.git",
+    "url": "git+https://github.com/yoransys/freelens-stats-extension.git",
     "directory": "."
   },
   "main": "out/main/index.js",

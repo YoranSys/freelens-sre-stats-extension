@@ -46,13 +46,13 @@ export function createAvailableVersionPage<T extends AvailableVersionPageProps>(
         const store = variant.kubeObjectClass.getStore();
         if (store) {
           Common.logger.debug(
-            `[@freelensapp/example-extension]: Rendering ${resourceName} page with API version ${variant.version}`,
+            `[freelens-stats-extension]: Rendering ${resourceName} page with API version ${variant.version}`,
           );
           return <variant.PageComponent {...props} />;
         }
       } catch (error) {
         Common.logger.debug(
-          `[@freelensapp/example-extension]: API version ${variant.version} not available for ${resourceName}: ${error}`,
+          `[freelens-stats-extension]: API version ${variant.version} not available for ${resourceName}: ${error}`,
         );
       }
     }
@@ -60,7 +60,7 @@ export function createAvailableVersionPage<T extends AvailableVersionPageProps>(
     // No version available - CRD not installed in cluster
     const triedVersions = variants.map((v) => v.version).join(", ");
     Common.logger.info(
-      `[@freelensapp/example-extension]: ${resourceName} CRD not found in cluster (tried versions: ${triedVersions})`,
+      `[freelens-stats-extension]: ${resourceName} CRD not found in cluster (tried versions: ${triedVersions})`,
     );
 
     return (
