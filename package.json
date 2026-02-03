@@ -64,8 +64,8 @@
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.28.0",
     "@electron-toolkit/tsconfig": "^2.0.0",
-    "@freelensapp/extensions": "^1.6.1",
-    "@freelensapp/kube-object": "^1.6.1",
+    "@freelensapp/extensions": "^1.8.0",
+    "@freelensapp/kube-object": "^1.8.0",
     "@types/node": "~22.15.35",
     "@types/react": "^17.0.90",
     "@vitejs/plugin-react": "^5.1.1",
@@ -86,5 +86,10 @@
     "openlens",
     "freelens"
   ],
-  "packageManager": "pnpm@10.22.0"
+  "packageManager": "pnpm@10.22.0",
+  "pnpm": {
+    "overrides": {
+      "@freelensapp/kube-object": "^1.8.0"
+    }
+  }
 }
