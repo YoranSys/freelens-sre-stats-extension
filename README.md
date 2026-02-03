@@ -23,13 +23,12 @@ for more informations.
 ## Install
 
 To install open Freelens and go to Extensions (`ctrl`+`shift`+`E` or
-`cmd`+`shift`+`E`), and install `freelens-sre-stats-extension`.
+`cmd`+`shift`+`E`), and install `@YoranSys/freelens-stats-extension`.
 
 or:
 
 Use a following URL in the browser:
-[freelens://app/extensions/install/freelens-sre-stats-extension]
-(freelens://app/extensions/install/freelens-sre-stats-extension)
+[freelens://app/extensions/install/%40YoranSys%2Ffreelens-stats-extension](freelens://app/extensions/install/%40YoranSys%2Ffreelens-stats-extension)
 
 ## Build from the source
 
