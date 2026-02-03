@@ -1,0 +1,165 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  color: var(--textColorPrimary);
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--textColorSecondary);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: var(--contentColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cardLabel {
+  color: var(--textColorSecondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cardValue {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.cardHint {
+  font-size: 12px;
+  color: var(--textColorTertiary);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--contentColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--borderColor);
+  font-size: 13px;
+}
+
+.table th {
+  background: var(--layoutBackground);
+  color: var(--textColorSecondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 11px;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.issuesCell {
+  color: var(--colorError);
+  font-weight: 600;
+}
+
+.scoreCell {
+  font-weight: 600;
+  color: var(--colorWarning);
+}
+
+.heatmap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.heatmapCell {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid var(--borderColor);
+  background: var(--contentColor);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 72px;
+}
+
+.heatmapName {
+  font-size: 12px;
+  color: var(--textColorSecondary);
+  word-break: break-word;
+}
+
+.heatmapScore {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.heat0 {
+  background: var(--contentColor);
+}
+
+.heat1 {
+  background: rgba(255, 193, 7, 0.15);
+  border-color: rgba(255, 193, 7, 0.35);
+}
+
+.heat2 {
+  background: rgba(255, 152, 0, 0.2);
+  border-color: rgba(255, 152, 0, 0.45);
+}
+
+.heat3 {
+  background: rgba(244, 67, 54, 0.2);
+  border-color: rgba(244, 67, 54, 0.5);
+}
+
+.heat4 {
+  background: rgba(183, 28, 28, 0.25);
+  border-color: rgba(183, 28, 28, 0.6);
+}
+
+.empty {
+  color: var(--textColorSecondary);
+  font-size: 13px;
+  padding: 8px 0;
+}

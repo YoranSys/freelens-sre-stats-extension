@@ -1,0 +1,26 @@
+declare const classNames: {
+  readonly page: "page";
+  readonly header: "header";
+  readonly title: "title";
+  readonly subtitle: "subtitle";
+  readonly section: "section";
+  readonly cards: "cards";
+  readonly card: "card";
+  readonly cardLabel: "cardLabel";
+  readonly cardValue: "cardValue";
+  readonly cardHint: "cardHint";
+  readonly table: "table";
+  readonly issuesCell: "issuesCell";
+  readonly scoreCell: "scoreCell";
+  readonly heatmap: "heatmap";
+  readonly heatmapCell: "heatmapCell";
+  readonly heatmapName: "heatmapName";
+  readonly heatmapScore: "heatmapScore";
+  readonly heat0: "heat0";
+  readonly heat1: "heat1";
+  readonly heat2: "heat2";
+  readonly heat3: "heat3";
+  readonly heat4: "heat4";
+  readonly empty: "empty";
+};
+export = classNames;
