@@ -62,4 +62,4 @@ jobs:
               sha: mainRef.data.object.sha,
             });
             console.log(result);
-          github-token: ${{ secrets.GH_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
