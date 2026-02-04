@@ -1,6 +1,6 @@
 {
   "name": "freelens-stats-extension",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SRE investigation stats for Freelens clusters",
   "repository": {
     "type": "git",
