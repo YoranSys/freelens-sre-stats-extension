@@ -47,6 +47,11 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .cardLabel {
@@ -162,4 +167,231 @@
   color: var(--textColorSecondary);
   font-size: 13px;
   padding: 8px 0;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.filterToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--textColorSecondary);
+  cursor: pointer;
+  user-select: none;
+
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: var(--textColorPrimary);
+  }
+}
+
+.namespaceRow {
+  &:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+.namespaceCell {
+  font-weight: 600;
+}
+
+.expandIcon {
+  font-size: 10px;
+  color: var(--textColorSecondary);
+  display: inline-block;
+  width: 12px;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: white;
+}
+
+.expandedCell {
+  padding: 0 !important;
+  background: var(--layoutBackground);
+}
+
+.podDetails {
+  padding: 16px;
+}
+
+.podDetailsHeader {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--textColorSecondary);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.filteredInfo {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--textColorTertiary);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.podTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--contentColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 12px;
+
+  th,
+  td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--borderColor);
+  }
+
+  th {
+    background: var(--layoutBackground);
+    color: var(--textColorSecondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 10px;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+.podWithIssues {
+  background: rgba(244, 67, 54, 0.05);
+}
+
+.podName {
+  font-family: monospace;
+  font-size: 11px;
+}
+
+.ageCell {
+  color: var(--textColorSecondary);
+  font-size: 11px;
+}
+
+.issuesBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  background: rgba(244, 67, 54, 0.2);
+  color: rgb(244, 67, 54);
+}
+
+.restartReasons,
+.issueDetails {
+  font-size: 11px;
+  max-width: 300px;
+}
+
+.reasonsList,
+.issuesList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reasonItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.reasonBadge {
+  display: inline-flex;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  background: rgb(255, 152, 0);
+  color: white;
+  border: 1px solid rgba(255, 152, 0, 0.4);
+}
+
+.reasonCount {
+  font-size: 10px;
+  color: var(--textColorSecondary);
+  font-weight: 600;
+}
+
+.issueItem {
+  padding: 3px 6px;
+  background: rgba(244, 67, 54, 0.1);
+  border-left: 2px solid rgba(244, 67, 54, 0.5);
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 1.4;
+  color: var(--textColorPrimary);
+}
+
+.noData {
+  color: var(--textColorTertiary);
+  font-size: 11px;
+}
+
+.timeFilter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  label {
+    font-size: 12px;
+    color: var(--textColorSecondary);
+  }
+}
+
+.timeSelect {
+  padding: 6px 12px;
+  background: var(--contentColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 6px;
+  color: var(--textColorPrimary);
+  font-size: 12px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--colorOk);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--colorOk);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+  }
+}
+
+.eventMessage {
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  color: var(--textColorSecondary);
 }
